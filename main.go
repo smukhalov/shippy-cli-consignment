@@ -35,7 +35,7 @@ func main() {
 		log.Fatalf("Did not connect: %v", err)
 	}
 	defer conn.Close()
-	client := pb.NewShiАppingServiceClient(conn)
+	client := pb.NewShippingServiceClient(conn)
 
 	// Contact the server and print out its response.
 	file := defaultFilename
